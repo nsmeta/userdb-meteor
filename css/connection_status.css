@@ -1,0 +1,18 @@
+#connection-status {
+    margin-top: 10px;
+}
+
+.status-connected {
+    background-color: green;
+    color: #FFF;
+}
+
+.status-connecting {
+    background-color: yellow;
+    color: #FFF;
+}
+
+.status-waiting {
+    background-color: red;
+    color: #FFF;
+}

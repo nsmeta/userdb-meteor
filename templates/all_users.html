@@ -1,0 +1,40 @@
+<template name="all_users">
+    <div class="row">
+        <div class="span12">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Active?</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each users}}
+            <tr>
+                <td>{{email}}</td>
+                <td>{{firstname}}</td>
+                <td>{{lastname}}</td>
+                <td>
+                    {{#if active_is "yes"}}
+                    <input type="checkbox" class="activate-checkbox"
+                    docid="{{_id}}" checked="checked" />
+                    {{/if}}
+                    {{#if active_isnt "yes"}}
+                    <input type="checkbox" class="activate-checkbox"
+                    docid="{{_id}}" />
+                    {{/if}}
+                </td>
+                <td>
+                    <button class="btn btn-danger btn-mini delete-user"
+                        docid="{{_id}}">Delete</button>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+</div>
+</template>

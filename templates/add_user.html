@@ -1,0 +1,43 @@
+<template name="add_user">
+<button id="add-user-button"
+    class="btn btn-primary pull-right">Create User Account</button>
+    <form id="create-user-form" class="form-horizontal">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="userEmail">Email</label>
+                <div class="controls">
+                    <input type="email" class="input-xlarge" id="userEmail" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="userFirstname">First Name</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="userFirstname" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="userLastname">Last Name</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="userLastname" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="userActive">Make Active</label>
+                <div class="controls">
+                    <label class="checkbox">
+                    <input type="checkbox" class="input-xlarge" id="userActive" />
+                    Tick this box to make the user account activated.</label>
+                </div>
+            </div>
+
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                    Create User
+                </button>
+                <button id="user-cancel" class="btn">Cancel</button>
+            </div>
+        </fieldset>
+
+    </form>
+</template>

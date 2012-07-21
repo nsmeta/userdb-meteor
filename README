@@ -1,0 +1,7 @@
+Live Demo: http://userdb.meteor.com/
+=====
+My first experience building a small app with Meteor framework (http://meteor.com/).
+
+The web app is a simple user database interface(no authorization implemented!).
+
+You can create/delete users, and make them active/inactive. Of course, all changes you make will be reflected in near real-time(due to the nature of Meteor framework). An so if you open two browser windows and add a user you will see the change in both windows almost simultaneously.
